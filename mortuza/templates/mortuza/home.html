@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <title>Welcome - Md. Ali Mortuza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #f9fbe7);
+            padding: 50px;
+            text-align: center;
+        }
+        .container {
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 10px #ccc;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #00695c;
+        }
+        .nav-button {
+            margin: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #004d40;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+
+        .profile-pic {
+           width: 150px;
+           height: 150px;
+           border-radius: 50%;
+           object-fit: cover;
+           margin-bottom: 20px;
+           border: 3px solid #00796b;
+        }
+
+        .nav-button:hover {
+            background: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <img src="{% static 'mortuza/mypic.jpg' %}" alt="My Picture" class="profile-pic" /> <br><br>
+    <div class="container">
+        <h1>Md. Ali Mortuza</h1>
+        <a href="{% url 'resume' %}" class="nav-button">View Resume</a>
+        <a href="{% url 'interest' %}" class="nav-button">Explore Interests</a>
+    </div>
+
+    
+
+</body>
+</html>

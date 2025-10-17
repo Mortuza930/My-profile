@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <title>Resume - Md. Ali Mortuza</title>
+    <style>
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .resume-container {
+            background: white;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 18px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .download-button:hover {
+            background-color: #1a252f;
+        }
+
+        @media print {
+            .download-button {
+                display: none;
+            }
+        }
+
+
+
+        h2 {
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .highlight {
+            color: #00695c;
+            font-weight: bold;
+        }
+        
+
+        
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        .left-info {
+            max-width: 70%;
+        }
+
+        .right-photo .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ccc;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="resume-header">
+       <div class="left-info">
+         <h1>Md. Ali Mortuza</h1>
+         <p>
+         <strong>Phone:</strong> 01929993192 / 01718127937<br>
+         <strong>Email:</strong> mortuza.unigroup@gmail.com<br>
+         <strong>Address:</strong> House No: 126, Great Wall City, Joydevpur, Gazipur
+         </p>
+       </div>
+       <div class="right-photo">
+         <img src="{% static 'mortuza/mypic.jpg' %}" alt="Profile Photo" class="profile-pic">
+       </div>
+    </div>
+
+
+    <div class="section">
+        <h2>Career Objective</h2>
+        <p>To lead and transform pharmaceutical plant operations through strategic planning, process optimization, and cross-functional collaboration. Bringing over 17 years of leadership in production management to contribute to an innovative and compliant organization.</p>
+    </div>
+
+    <div class="section">
+        <h2>Career Summary</h2>
+        <ul>
+            <li>17+ years in pharmaceutical manufacturing: Oral Solid Dosage, Liquid, Sterile, MDI/DPI</li>
+            <li>5+ years in plant operations leadership</li>
+            <li>Expertise in GMP, cost control, validation, audits, ERP</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Professional History</h2>
+        <ul>
+            <li><span class="highlight">UniMed UniHealth Pharmaceuticals Ltd</span><br>
+                Production Manager (2024–Present)<br>
+                Manager Production (2021–2024)<br>
+                Deputy Manager (2017–2021)<br>
+                Assistant Manager (2013–2017)</li>
+            <li><span class="highlight">Sun Pharmaceutical Ltd</span> – Production Officer (2010–2013)</li>
+            <li><span class="highlight">Healthcare Pharmaceuticals Ltd</span> – Production Officer (2007–2010)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li>M.Pharm – University of Development Alternatives (2015)</li>
+            <li>B.Pharm – University of Rajshahi (2004)</li>
+            <li>HSC – Rajshahi Board (1999)</li>
+            <li>SSC – Rajshahi Board (1997)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Key Achievements</h2>
+        <ul>
+            <li>Qualified new oral solid plant</li>
+            <li>Served as System Admin for Gerteis Mini Pactor</li>
+            <li>Led training, cleaning validation, and GMP readiness</li>
+        </ul>
+    </div>
+    <div class="resume-container">
+        <div style="text-align: center; margin: 10px 0;">
+        <button class="download-button" onclick="window.print()">⬇️ Download as PDF</button>
+        </div>
+
+    </div> <!-- end of resume-container -->
+</body>
+</html>
+
+
